@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Hover maze </title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@marcerlperis">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="animate__animated animate__pulse">
+            HOVER MAZE
+        </h1>
+    </header>
+    <main>
+        <p class="descripcion">
+            Bien hecho aventurer@ has superado el primer nivel... el mas sencillo, serás capaz de seguir hasta el final?
+            Vamos a poner a prueba tu memoria, escoge la plataforma correcta y no caigas al vacio.... 😈
+        </p>
+        <ul class="tiempos" id="timesList"></ul>
+        <p class="tiempo_total" id="totalTime"></p>
+        
+        <button class="boton1">
+            <a href="nivel1.html">NIVEL 1</a>
+        </button>
+        <button class="boton1">
+            <a href="nivel2.html">NIVEL 2</a>
+        </button>
+        <p class="warning">SI RESETEAS EL TIEMPO EMPEZARAS DE NUEVO. ¿ESTAS SEGUR@?</p>
+        <button class="reset" id="resetButton">Resetear tiempos</button>
+
+
+    </main>
+    <hr>
+    <footer>
+        <a href="https://www.flaticon.es/iconos-gratis/cursor" title="cursor iconos">Cursor iconos creados por Freepik - Flaticon</a>
+        © 2025 - Todos los derechos reservados
+    </footer>
+    <script src="js/timer.js"></script>  
+</body>
+
+</html>

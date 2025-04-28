@@ -1,0 +1,326 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f4f4f4;
+    background-image: url(../img/desktop-wallpaper-castle-dungeon-ruins-fantasy-art.jpg);
+    background-size: cover;
+    cursor: url(../img/guerrero.png), auto;
+}
+main {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h1 {
+    font-size: 30px;
+    background-color: red;
+    border-radius: 5px;
+    animation-iteration-count: infinite;
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px lightgray;
+    max-width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.volver {
+    justify-self: center;
+}
+.volver a {
+    background-color: red;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
+    color: black;
+    font-weight: bold;
+}
+.volver a:hover {
+    background-color: black;
+    color: red;
+}
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.nivel2 {
+    display: flex;
+    position: relative;
+    margin-left: 25%;
+    margin-top: 4%;   
+}
+.nivel2 div {
+    background-color: gray;
+    background-size: cover;
+    border: 3px dashed black;
+    border-radius: 5px;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bloque-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+    position: sticky;
+    color: red;
+    text-shadow: 2px 2px 5px black ;
+    animation: flotar 5s linear infinite;
+}
+@keyframes flotar {
+    0% {
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5), 
+        inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        width: 130px;
+        height: 55px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), 
+        inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5), 
+        inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.bloque1 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 120px;
+    animation: aparecer 1s, mover 5s linear alternate infinite;
+
+}
+
+.bloque-inicial:hover .bloque1 {
+    display: block;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+}
+@keyframes mover {
+    0% {
+        top: -140px;
+    }
+
+    100% {
+        top: 140px;
+    }
+}
+
+.final {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 120px;
+    font-weight: bold;
+    position: absolute;
+    left: 700px;
+    top: -3px;
+    color: red;
+    text-shadow: 2px 2px 5px black ;
+    animation: aparecer 1s;
+}
+.bloque-inicial:hover .final {
+    display: flex;
+}
+.bloque2 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover 3s linear alternate infinite;
+
+}
+
+.bloque1:hover .bloque2 {
+    display: block;
+}
+.bloque3 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover 6s linear alternate infinite;
+
+}
+.bloque2:hover .bloque3 {
+    display: block;
+}
+.bloque4 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover1 4s linear alternate infinite;
+
+}
+
+.bloque3:hover .bloque4 {
+    display: block;
+}
+@keyframes mover1 {
+    0% {
+        top: 140px;
+    }
+
+    100% {
+        top: -140px;
+    }
+}
+.bloque5 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover1 4s linear alternate infinite;
+
+}
+
+.bloque4:hover .bloque5 {
+    display: block;
+}
+.bloque6 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover 3s linear alternate infinite;
+
+}
+
+.bloque5:hover .bloque6 {
+    display: block;
+}
+.bloque7 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover1 4s linear alternate infinite;
+
+}
+
+.bloque6:hover .bloque7 {
+    display: block;
+}
+.bloque8 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover 3s linear alternate infinite;
+
+}
+
+.bloque7:hover .bloque8 {
+    display: block;
+}
+.bloque9 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover 6s linear alternate infinite;
+
+}
+
+.bloque8:hover .bloque9 {
+    display: block;
+}
+.bloque10 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover1 5s linear alternate infinite;
+
+}
+
+.bloque9:hover .bloque10 {
+    display: block;
+}
+.bloque11 {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 60px;
+    height: 90px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    left: 50px;
+    animation: aparecer 1s, mover1 4s linear alternate infinite;
+
+}
+
+.bloque10:hover .bloque11 {
+    display: block;
+}
+.final a {
+    box-shadow: 0px 0px 20px black;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.final a:hover {
+    background-color: black;
+    color: red;
+}
+.crono {
+    font-family: fantasy;
+    padding: 10px;
+    background-color: white;
+    font-size: large;
+    width: max-content;
+    margin: auto;
+    animation: nervios 1s linear infinite;
+    animation-delay: 10s;
+    border-radius: 10px;
+}
+@keyframes nervios {
+    50% {
+        background-color: red;
+    }
+}

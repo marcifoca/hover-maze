@@ -1,0 +1,146 @@
+body {
+    padding-top: 3%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-image: url(../img/desktop-wallpaper-castle-dungeon-ruins-fantasy-art.jpg);
+    background-size: cover;
+    cursor: url(../img/guerrero.png), auto;
+}
+
+h1 {
+    margin-top: 10%;
+    font-size: 70px;
+    margin: auto;
+    background-color: red;
+    border-radius: 5px;
+    animation-iteration-count: infinite;
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px lightgray;
+    max-width: 800px;
+    text-align: center;
+    padding: 10px;
+}
+
+h1:hover {
+    background-image: linear-gradient(to right, yellow, gray);
+}
+.descripcion {
+    max-width: 800px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    opacity: 0.5;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px;
+    padding: 10px;
+}
+
+.inicio {
+    text-align: center;
+    background-color: aliceblue;
+    opacity: 0.7;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px;
+    padding: 10px;
+}
+.boton1 {
+    padding: none;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.boton1:hover {
+    background-image: radial-gradient(lightgray, gray);
+}
+
+.boton1 a{
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+}
+
+footer {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.gracias {
+    max-width: 800px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    opacity: 0.5;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px;
+    padding: 10px;
+}
+.warning {
+    font-family: fantasy;
+    width: fit-content;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+.tiempo_final {
+    border-radius: 10px;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: fantasy;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.tiempos {
+    padding-left: 0px;
+    list-style: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: fantasy;
+    width: fit-content;
+    text-transform: capitalize;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.tiempos li {
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+.tiempos li:hover {
+    background-color: yellow;
+
+}
+.reset {
+    padding: 5px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    cursor: pointer;
+    background-image: radial-gradient(lightgray, gray);
+}
+.tiempo_total {
+    border-radius: 10px;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: fantasy;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    text-transform: capitalize;
+}
