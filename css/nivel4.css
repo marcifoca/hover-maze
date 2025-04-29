@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,10 +9,9 @@ body {
     cursor: url(../img/guerrero.png), auto;
 }
 main {
-    margin-top: 10%;
+    margin-top: 2%;
     margin-bottom: 10%;
 }
-
 h1 {
     font-size: 30px;
     background-color: red;
@@ -51,7 +49,7 @@ footer {
     display: flex;
     position: relative;
     margin-left: 25%;
-    margin-top: 4%;   
+    margin-top: 15%;   
 }
 .nivel2 div {
     background-color: gray;
@@ -68,7 +66,7 @@ footer {
     width: 120px;
     height: 50px;
     font-weight: bold;
-    position: sticky;
+    position: relative;
     color: red;
     text-shadow: 2px 2px 5px black ;
     animation: flotar 5s linear infinite;
